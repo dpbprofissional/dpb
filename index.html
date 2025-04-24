@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detetive Particular Profissional</title>
+  <link rel="canonical" href="https://seudominio.com.br" />
+  <meta name="description" content="Detetive particular profissional. Serviços de investigação conjugal, corporativa, localização de pessoas, forense digital, entre outros. Sigilo, ética e tecnologia a serviço da verdade.">
+  <meta name="keywords" content="detetive, investigação, detetive particular, serviços de investigação, detetive profissional, forense digital, localização de pessoas">
+  <meta name="author" content="Detetive Profissional BR">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f0f0f;
+      color: white;
+    }
+    .navbar {
+      background: #1a1a1a;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar h1 {
+      font-size: 1.2rem;
+      color: red;
+    }
+    .menu-toggle {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+      color: white;
+    }
+    .menu {
+      display: flex;
+      gap: 1rem;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: color 0.3s;
+    }
+    .menu a:hover {
+      color: red;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #0f0f0f;
+      border-bottom: 3px solid red;
+    }
+    header .distintivo {
+      max-width: 150px;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      font-size: 2rem;
+      color: white;
+    }
+    header p {
+      margin-top: 1rem;
+      color: #ccc;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .servico {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+      text-align: center;
+    }
+    .servico h3 {
+      color: red;
+      margin-bottom: 0.5rem;
+    }
+    .servico p {
+      color: #ccc;
+    }
+    .formulario {
+      background: #1c1c1c;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+    .formulario input,
+    .formulario textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+      background: #2a2a2a;
+      color: white;
+    }
+    .formulario button {
+      background: red;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .formulario button:hover {
+      background: #b30000;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #000;
+    }
+    .whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+        flex-direction: column;
+        background: #1a1a1a;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+      }
+      .menu.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>DPB Profissional</h1>
+    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">☰</div>
+    <div class="menu" id="menu">
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+      <a href="#sobre">Sobre</a>
+    </div>
+  </nav>
+  <header>
+    <img class="distintivo" src="logo.png" alt="Distintivo do Detetive Profissional">
+    <h1>Investigação com Resultados</h1>
+    <p>Discrição, Ética e Tecnologia a favor da verdade</p>
+  </header>
+  <section class="section" id="servicos">
+    <h2>Serviços</h2>
+    <div class="servicos">
+      <div class="servico"><h3>Investigação Conjugal</h3><p>Traições, comportamento suspeito, rotina do parceiro.</p></div>
+      <div class="servico"><h3>Localização de Pessoas</h3><p>Desaparecidos, devedores, herdeiros e paradeiro desconhecido.</p></div>
+      <div class="servico"><h3>Investigação Empresarial</h3><p>Fraudes internas, concorrência desleal, vazamento de informações.</p></div>
+      <div class="servico"><h3>Levantamento de Vida Pregressa</h3><p>Histórico de relacionamentos, antecedentes pessoais e profissionais.</p></div>
+      <div class="servico"><h3>Monitoramento de Rotina</h3><p>Filhos, cônjuges ou funcionários sob suspeita.</p></div>
+      <div class="servico"><h3>Forense Digital</h3><p>Análise de celulares, computadores, redes sociais e recuperação de dados.</p></div>
+      <div class="servico"><h3>Redes Sociais e Mensagens</h3><p>Verificação de mensagens, ameaças, perseguições e comportamento online.</p></div>
+      <div class="servico"><h3>Golpes Digitais e Clonagens</h3><p>Investigação de golpes online, perfis falsos, invasões e fraudes bancárias.</p></div>
+    </div>
+  </section>
+  <section class="section" id="contato">
+    <h2>Contato</h2>
+    <div class="formulario">
+      <form action="https://formspree.io/f/meqblwne" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <input type="tel" name="telefone" placeholder="Telefone (opcional)" />
+        <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+  <section class="section" id="sobre">
+    <h2>Sobre o Investigador</h2>
+    <p>Atuação com total sigilo, ética e experiência. Atendemos todo o Brasil com excelência e dedicação. Nossa missão é descobrir a verdade com provas e segurança.</p>
+  </section>
+  <footer>
+    &copy; 2025 Detetive Profissional
+  </footer>
+  <a class="whatsapp" href="https://wa.me/+380684975957" target="_blank" aria-label="Fale conosco pelo WhatsApp">Fale no WhatsApp</a>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+
+    document.querySelectorAll('.menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('menu').classList.remove('show');
+      });
+    });
+  </script>
+</body>
+</html>
